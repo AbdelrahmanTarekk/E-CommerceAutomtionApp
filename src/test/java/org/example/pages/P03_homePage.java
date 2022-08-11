@@ -27,6 +27,10 @@ public class P03_homePage {
         Assert.assertTrue(actualCurrency.contains(expectedCurrency));
     }
 
+    public WebElement priceSymbol(){
+        return Hooks.driver.findElement(By.cssSelector("span.price.actual-price"));
+    }
+
     public WebElement searchBox(){
 
         return Hooks.driver.findElement(By.id("small-searchterms"));

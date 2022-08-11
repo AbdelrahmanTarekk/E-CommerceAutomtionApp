@@ -12,7 +12,7 @@ public class P01_RegisterPage {
     @FindBy(linkText = "Register")
     public WebElement registerBtn;
 
-    @FindBy(id = "gender-male")
+    @FindBy(css = "input#gender-male")
     public WebElement genderRBtn;
 
     @FindBy(id = "FirstName")
